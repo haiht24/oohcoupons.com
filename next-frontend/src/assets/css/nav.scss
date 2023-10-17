@@ -1,0 +1,32 @@
+$nav-bg: rgb(255, 255, 255);
+$nav-bs: rgb(222, 222, 222);
+$nav-btn-bg: linear-gradient(168deg, #eb863d 0%, #fa7645 100%);
+
+.nav {
+    background-color: $nav-bg;
+    box-shadow: 0 1px 8px 0 $nav-bs;
+    z-index: 101;
+
+    .nav-content {
+        max-width: 1200px;
+        height: 80px;
+        box-shadow: 0 1px 0 0 #dedede;
+
+        @media screen and (max-width: 990px) {
+            padding: 0 20px;
+        }
+
+        .dex {
+            height: 3rem;
+            background: $nav-btn-bg;
+            font-size: .75rem;
+            font-family: myFont5;
+            padding-left: 30px;
+
+            @media (min-width: 991px) {
+                font-size: 1rem;
+            }
+        }
+    }
+
+}
