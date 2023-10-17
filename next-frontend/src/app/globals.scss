@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './fonts.scss';
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background: 255, 255, 255;
+}
+
+html {
+  // font-size: 62.5%;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background));
+  overflow-x: hidden;
+}
+
+div,
+ul,
+li,
+span,
+h1,
+h2 {
+  font-family: myFont5;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+.btn-primary {
+  height: 60px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-family: "poppins-SemiBold";
+  font-weight: 600;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 60px;
+
+  &:hover {
+    box-shadow: 0 0 20px 2px #FFDFCC;
+  }
+}
