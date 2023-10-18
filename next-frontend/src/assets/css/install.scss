@@ -20,7 +20,6 @@
     width: 1200px;
     margin: 0 auto;
     height: auto;
-
     &>h1 {
         width: 100%;
         height: 70px;
@@ -104,6 +103,15 @@
         }
 
     }
+
+    .section_right {
+        .section3_img {
+            width: 673px;
+            height: 624px;
+            object-fit: contain;
+            float: right;
+        }
+    }
 }
 
 @media screen and (max-width: 990px) {
@@ -128,7 +136,7 @@
 
     .section_area {
         width: 100%;
-
+        
         &>h1 {
             height: auto;
             line-height: unset;
@@ -139,6 +147,9 @@
         .section_area_content {
             flex-direction: column;
             text-align: center;
+            &.fist_content{
+                padding-bottom: 52px;
+            }
 
             .section_left {
                 width: 100%;
@@ -169,6 +180,14 @@
 
 
         }
+        .section_right {
+            .section3_img {
+                width: 100%;
+                height: auto;
+                margin-bottom: 52px;
+                margin-top: 20px;
+            }
+        }
     }
 
       // 
@@ -179,3 +198,4 @@
   
       // 
 }
+
