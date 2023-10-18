@@ -29,10 +29,9 @@ const MerchantList = () => {
                 </div>
             </section>
             <section className='features_list'>
-            <h1>Features of Moolah</h1>
             <h1>Could online savings be any easier?</h1>
             <h2>Try moolah for automatic coupon codes and  reward points.</h2>
-            <ButtonPrimary link={`#`} text={`Add Moolah to Chrome`} cl={`mt-[30px] mb-[60px] lg:mt-[70px] lg:mb-[100px] block w-full lg:w-[250px] mx-auto`}/>
+            <ButtonPrimary link={`#`} text={`Add Moolah to Chrome`} cl={`mt-[30px] mb-[60px] lg:mb-[100px] block w-full lg:w-[250px] mx-auto`}/>
             </section>
         </>
     )

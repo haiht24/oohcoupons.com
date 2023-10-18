@@ -18,7 +18,7 @@ const Section3 = () => {
             <ButtonPrimary
               link={`#`}
               text= {` Add Moolah to Chrome - It's Free!`}
-              cl={`mt-10 w-max px-8`}
+              cl={`mt-10 px-8 overflow-hidden lg:w-fit`}
             >
             
             </ButtonPrimary>
