@@ -17,7 +17,7 @@ const Masthead = () => {
                     </h1>
                     <div className='simple_introduce mt-5 flex flex-col'>
                         <span>
-                            Don't miss out today's top coupons at <i>60,000+</i> online stores. With{" "}
+                            {`Don't miss out today's top coupons at`} <i>60,000+</i> online stores. With{" "}
                             <i>ONE CLICK</i>, Moolah will automatically find and apply the best codes at
                             checkout - in seconds.
                         </span>
