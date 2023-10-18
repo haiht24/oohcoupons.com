@@ -1,3 +1,6 @@
+import Image from 'next/image'
+import srcFooter from '@/assets/images/googleBig2.png'
+import Logo from '@/assets/images/moolah.webp'
 import '@/assets/css/footer.scss'
 const Footer = () => {
     return (
@@ -6,8 +9,8 @@ const Footer = () => {
                 <div style={{ height: 10 }} />
                 <div className="footer-value-left">
                     <div className="footer-value-left-moolah">
-                        <a href="/" style={{ display: "inline-block" }}>
-                            <img src="https://www.joinmoolah.com/www/images/moolah.png" />
+                        <a href="#" style={{ display: "inline-block" }}>
+                            <Image src={Logo} alt={`Logo`}/>
                         </a>
                     </div>
                     <div className="footer-value-left-Save">
@@ -33,14 +36,14 @@ const Footer = () => {
                     </div>
                     <div className="footer-value-right-pic">
                         <div className="footer-value-right-pic-googleBig">
-                            <img src="https://www.joinmoolah.com/www/images/googleBig2.png" />
+                            <Image src={srcFooter} alt='srcFooter'/>
                         </div>
                     </div>
                 </div>
                 <div className="footer-value-right">
                     <div className="footer-value-right-button">
                         <a
-                            href="https://chrome.google.com/webstore/detail/moolah-automatic-coupon-h/gdnhngmilhhebigaokmniikdlcjbcbhg"
+                            href="#"
                             target="_blank"
                         >
                             <div className="footer-value-right-button-AMTC">
@@ -61,7 +64,7 @@ const Footer = () => {
                             About Us
                         </a>
                         <span>|</span>
-                        <a href="https://joinmoolah.goaffpro.com/" target="_blank">
+                        <a href="#/" target="_blank">
                             Affiliate Program
                         </a>
                         <span>|</span>

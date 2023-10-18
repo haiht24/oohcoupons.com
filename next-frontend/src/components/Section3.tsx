@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import srcSec1 from '@/assets/images/section1.png'
+import srcSec3 from '@/assets/images/section3.png'
 import '@/assets/css/install.scss'
 import { ButtonPrimary } from './Buttons'
 
@@ -15,17 +15,19 @@ const Section3 = () => {
               Moolah will automatically apply the best coupon codes at checkout so
               you can shop confidently.{" "}
             </p>
-            <a
-              href="/?utm_source=moolah&utm_page=pc_home&utm_block=mid5&direct=1"
-              target="_blank"
+            <ButtonPrimary
+              link={`#`}
+              text= {` Add Moolah to Chrome - It's Free!`}
+              cl={`mt-10 w-max px-8`}
             >
-              Add Moolah to Chrome - It's Free!
-            </a>
+            
+            </ButtonPrimary>
           </div>
           <div className="section_right">
-            <img
+            <Image
               className="section3_img"
-              src="https://www.joinmoolah.com/www/images/index/section3.png"
+              src={srcSec3}
+              alt='srcSec3'
             />
           </div>
         </div>
