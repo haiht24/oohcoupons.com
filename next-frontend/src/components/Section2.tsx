@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import srcSec2 from '@/assets/images/section2.png'
-import srcSec2Gif from '@/assets/images/section2.gif'
+import srcSec2 from '@/assets/images/oo/Image 2 - Gif/home-2.gif'
+// import srcSec2Gif from '@/assets/images/section2.gif'
 import '@/assets/css/install.scss'
 import { ButtonPrimary } from './Buttons'
 
@@ -15,11 +15,11 @@ const Section2 = () => {
               src={srcSec2}
               alt='srcSec2'
             />
-            <Image
+            {/* <Image
               className="section_img_gif"
               src={srcSec2Gif}
               alt='srcSec2Gif'
-            />
+            /> */}
           </div>
           <div className="section_left">
             <span className="order_number">02</span>

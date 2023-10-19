@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import srcSec1 from '@/assets/images/section1.png'
+import srcSec1 from '@/assets/images/oo/Image 1/home-1.png'
 import '@/assets/css/install.scss'
 import { ButtonPrimary } from './Buttons'
 

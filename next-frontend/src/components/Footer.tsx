@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import srcFooter from '@/assets/images/googleBig2.png'
+import srcFooter from '@/assets/images/oo/Footer/homefooter.png'
 import Logo from '@/assets/images/moolah.webp'
 import '@/assets/css/footer.scss'
 const Footer = () => {

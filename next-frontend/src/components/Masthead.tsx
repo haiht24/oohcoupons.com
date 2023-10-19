@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { ButtonPrimary } from './Buttons'
 import '@/assets/css/masthead.scss'
 import AllBrowser from '@/assets/images/browser-all.png'
-import Sideup from '@/assets/images/sideup.gif'
+import Sideup from '@/assets/images/oo/Top - Gif/ex-gif-done.gif'
 import Sidedown from '@/assets/images/sidedown.png'
 
 const Masthead = () => {
