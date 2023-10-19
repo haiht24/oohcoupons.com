@@ -5,13 +5,13 @@ import '@/assets/css/merchantlist.scss'
 
 export const MerchantItem = () => {
     return (
-        <li className='inline-block'>
+        <div className='inline-block'>
             <a
                 href="https://www.joinmoolah.com/track?pos=home_merchant_list&url=http%3A%2F%2Fwww.target.com%2F&is_web"
                 target="_blank">
                 <Image src={Merchan} alt={'merchan'} loading='lazy' width={90} height={90}/>
             </a>
-        </li>
+        </div>
     )
 }
 
