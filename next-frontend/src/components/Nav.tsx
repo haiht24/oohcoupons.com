@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import Logo from '@/assets/images/moolah.webp'
-import Logomb from '@/assets/images/moolah-logo.png'
+import Logo from '@/assets/images/oo/logo.png'
+import Logomb from '@/assets/images/oo/logo.png'
 import '@/assets/css/nav.scss'
 
 const Nav = ({nameExt}:any) => {
@@ -9,7 +9,7 @@ const Nav = ({nameExt}:any) => {
         <nav className="nav bg-white border-gray-200 fixed top-0 inset-x-0 shadow-bs-nav">
             <div className="nav-content flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                 <a href="https://flowbite.com" className="flex items-center">
-                    <Image alt={`${nameExt} Logo`} src={Logo} width={127} height={35} loading="eager" className='hidden lg:block'/>     
+                    <Image alt={`${nameExt} Logo`} src={Logo} width={127} height={35} loading="eager" className='hidden lg:block h-[66px] w-[66px]'/>     
                     <Image alt={`${nameExt} Logo`} src={Logomb} width={35} height={35} loading="eager" className='lg:hidden'/>     
                     <span className="self-center text-xl font-semibold whitespace-nowrap hidden">{nameExt}</span>
                 </a>

@@ -27,10 +27,9 @@
 
     // 
     .merchant_item {
-        li {
+        div {
             border-radius: 20px;
             border: 1px solid #E8E8E8;
-            list-style: none;
 
             &:hover {
                 background: #FFFFFF;
