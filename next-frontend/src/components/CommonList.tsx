@@ -4,7 +4,7 @@ import '@/assets/css/commonlist.scss'
 const CommonList = () => {
     return (
         <div className="common_list">
-            <h1>Over 100,000 Five-Star Reviews</h1>
+            <h1>Over 10,000 Reviews</h1>
             <ul className="stareview_item">
                 <li>
                     <h2>{`Talon O'Brian`}</h2>

@@ -3,21 +3,20 @@ import srcSec3 from '@/assets/images/oo/Image 3/home-3.png'
 import '@/assets/css/install.scss'
 import { ButtonPrimary } from './Buttons'
 
-const Section3 = () => {
+const Section3 = ({ext}:any) => {
   return (
     <div className="width_limit1">
       <div className="section_area">
         <div className="section_area_content">
           <div className="section_left ">
             <span className="order_number">03</span>
-            <span>Save Instantly</span>
+            <span>Enjoy Savings</span>
             <p className="brief_introduce">
-              Moolah will automatically apply the best coupon codes at checkout so
-              you can shop confidently.{" "}
+            Shop confidently knowing that oOhcoupons has got your back.{" "}
             </p>
             <ButtonPrimary
               link={`#`}
-              text= {` Add Moolah to Chrome - It's Free!`}
+              text={`Add to ${ext} - It's Free`}
               cl={`mt-10 px-8 overflow-hidden lg:w-fit`}
             >
             

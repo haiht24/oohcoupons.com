@@ -1,9 +1,9 @@
 import Image from 'next/image'
-import Logo from '@/assets/images/oo/logo.png'
-import Logomb from '@/assets/images/oo/logo.png'
+import Logo from '@/assets/images/oo/logo-new.png'
+import Logomb from '@/assets/images/oo/logo-new.png'
 import '@/assets/css/nav.scss'
 
-const Nav = ({nameExt}:any) => {
+const Nav = ({nameExt, ext}:any) => {
     
     return (
         <nav className="nav bg-white border-gray-200 fixed top-0 inset-x-0 shadow-bs-nav">
@@ -14,7 +14,7 @@ const Nav = ({nameExt}:any) => {
                     <span className="self-center text-xl font-semibold whitespace-nowrap hidden">{nameExt}</span>
                 </a>
                 <div className="flex items-center lg:order-2">
-                    <a href="#" className="dex text-white px-4 lg:px-5 py-2 lg:py-2.5 focus:outline-none flex items-center rounded-3xl">{`Add ${nameExt} Now`}</a>
+                    <a href="#" className="dex text-white px-4 lg:px-5 py-2 lg:py-2.5 focus:outline-none flex items-center rounded-3xl">{`Add to ${ext} - It's Free`}</a>
                 </div>
             </div>
         </nav>

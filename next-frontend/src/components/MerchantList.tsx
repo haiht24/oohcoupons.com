@@ -16,12 +16,12 @@ export const MerchantItem = () => {
 }
 
 
-const MerchantList = () => {
+const MerchantList = ({ext}:any) => {
     return (
         <>
             <section className='merchant_list'>
-                <h2>More than 60,000 merchants</h2>
-                <h3>Moolah works in tens of thousands of stores in United States, United Kingdom, Canada, Australia, Germany, France ...</h3>
+                <h2>30,000+ Brands</h2>
+                <h3>The oOhcoupons extension automatically searches for coupons on 30,000+ sites around the globe.</h3>
                 <div className='merchant_item grid grid-cols-2  md:grid-cols-3 lg:grid-cols-6 grid-rows-2 gap-6'>
                     {[...Array(12)].map((_, i) => (
                         <MerchantItem key={i} />
@@ -29,9 +29,9 @@ const MerchantList = () => {
                 </div>
             </section>
             <section className='features_list'>
-            <h1>Could online savings be any easier?</h1>
-            <h2>Try moolah for automatic coupon codes and  reward points.</h2>
-            <ButtonPrimary link={`#`} text={`Add Moolah to Chrome`} cl={`mt-[30px] mb-[60px] lg:mb-[100px] block w-full lg:w-[250px] mx-auto`}/>
+            <h1>Why spend more?</h1>
+            <h2>Try moolah for automatic coupon codes at checkout.</h2>
+            <ButtonPrimary link={`#`} text={`Add to ${ext} - It's Free`} cl={`mt-[30px] mb-[60px] block w-full lg:w-[300px] lg:mb-[100px] mx-auto`}/>
             </section>
         </>
     )
