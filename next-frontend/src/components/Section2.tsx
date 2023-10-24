@@ -23,9 +23,9 @@ const Section2 = () => {
           </div>
           <div className="section_left">
             <span className="order_number">02</span>
-            <span>Find Savings in Seconds</span>
+            <span>Instant Coupon Finder.</span>
             <p className="brief_introduce">
-              While you shop, Moolah will find working promo codes on the Internet.{" "}
+            The oOhcoupons extension automatically searches for and applies the coupon code to your shopping cart.{" "}
             </p>
             <ButtonPrimary link={`#`} text={`Install Now`} cl={`mt-10 w-max px-8`}/>
           </div>

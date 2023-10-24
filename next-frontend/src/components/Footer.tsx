@@ -2,7 +2,7 @@ import Image from 'next/image'
 import srcFooter from '@/assets/images/oo/Footer/homefooter.png'
 import Logo from '@/assets/images/moolah.webp'
 import '@/assets/css/footer.scss'
-const Footer = () => {
+const Footer = ({ext}:any) => {
     return (
         <div className="footer">
             <div className="footer-value-box">
@@ -32,7 +32,7 @@ const Footer = () => {
                 <div className="split-left-right" />
                 <div className="footer-value-center">
                     <div className="footer-value-center-text">
-                        <span>Install Moolah now, and start to save today!</span>
+                        <span>Install oOhcoupons and start saving today!</span>
                     </div>
                     <div className="footer-value-right-pic">
                         <div className="footer-value-right-pic-googleBig">
@@ -47,7 +47,7 @@ const Footer = () => {
                             target="_blank"
                         >
                             <div className="footer-value-right-button-AMTC">
-                                <span>Add Moolah to Chrome</span>
+                                <span>{`Add to ${ext} - It's Free`}</span>
                             </div>
                         </a>
                     </div>
@@ -55,8 +55,7 @@ const Footer = () => {
                 <div className="footer-box">
                     <div className="footer-value-text">
                         <span>
-                            Disclosure: We may earn a commission when you use one of our
-                            conpons/links to make a purchase.
+                        Disclosure: oOhcoupons employs affiliate programs to generate revenue, enabling us to earn a commission when you purchase a product through our links.
                         </span>
                     </div>
                     <div className="footer-value-left-fuwu">
