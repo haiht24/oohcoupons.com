@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import srcFooter from '@/assets/images/oo/Footer/homefooter.png'
-import Logo from '@/assets/images/moolah.webp'
+// import Logo from '@/assets/images/moolah.webp'
+import Logo from '@/assets/images/Logo-We 400x400.png'
 import { ButtonPrimary } from './Buttons'
 import '@/assets/css/footer.scss'
 const Footer = ({ext}:any) => {
