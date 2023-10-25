@@ -73,7 +73,7 @@ const Masthead = () => {
                         }
                     </div>
                     <div className="add_tips mt-5">
-                        It only takes 1 click to add Moolah to Chrome, Firefox, Edge or Safari
+                        Add oOhcoupons and start saving today!
                     </div>
                 </div>
                 <div className='masthead-content-right'>
