@@ -56,11 +56,11 @@ const Footer = ({ext}:any) => {
                             Contact Us
                         </a>
                         <span>|</span>
-                        <a href="/privacy-policy" target="_blank">
+                        <a href="/privacy" target="_blank">
                             Privacy Policy
                         </a>
                         <span>|</span>
-                        <a href="/terms-conditions" target="_blank">
+                        <a href="/term" target="_blank">
                             Terms &amp; Conditions
                         </a>
                     </div>
