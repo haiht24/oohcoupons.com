@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import srcFooter from '@/assets/images/oo/Footer/homefooter.png'
 import Logo from '@/assets/images/moolah.webp'
+import { ButtonPrimary } from './Buttons'
 import '@/assets/css/footer.scss'
 const Footer = ({ext}:any) => {
     return (
@@ -21,9 +22,6 @@ const Footer = ({ext}:any) => {
                     <div className="footer-about">
                         <a href="/terms-conditions">Terms &amp; Conditions</a>
                         <a href="/terms-conditions">Privacy Policy</a>
-                        <a href="https://joinmoolah.goaffpro.com/" target="_blank">
-                            Affiliate Program
-                        </a>
                     </div>
                     <div className="footer-banquan">
                         <i>JoinMoolah © 2022</i>
@@ -41,16 +39,7 @@ const Footer = ({ext}:any) => {
                     </div>
                 </div>
                 <div className="footer-value-right">
-                    <div className="footer-value-right-button">
-                        <a
-                            href="#"
-                            target="_blank"
-                        >
-                            <div className="footer-value-right-button-AMTC">
-                                <span>{`Add to ${ext} - It's Free`}</span>
-                            </div>
-                        </a>
-                    </div>
+                        <ButtonPrimary text={false} cl={'footer-value-right-button'}/>
                 </div>
                 <div className="footer-box">
                     <div className="footer-value-text">
@@ -63,11 +52,7 @@ const Footer = ({ext}:any) => {
                             About Us
                         </a>
                         <span>|</span>
-                        <a href="#/" target="_blank">
-                            Affiliate Program
-                        </a>
-                        <span>|</span>
-                        <a href="/contact-us" target="_blank">
+                        <a href="mailto:contact@oohcoupons.com" target="_blank">
                             Contact Us
                         </a>
                         <span>|</span>

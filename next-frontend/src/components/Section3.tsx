@@ -16,11 +16,9 @@ const Section3 = ({ext}:any) => {
             </p>
             <ButtonPrimary
               link={`#`}
-              text={`Add to ${ext} - It's Free`}
+              text={false}
               cl={`mt-10 px-8 overflow-hidden lg:w-fit`}
-            >
-            
-            </ButtonPrimary>
+            />
           </div>
           <div className="section_right">
             <Image

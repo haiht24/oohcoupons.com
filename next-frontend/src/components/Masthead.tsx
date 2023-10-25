@@ -1,6 +1,8 @@
+"use client"
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image'
-import { ButtonPrimary } from './Buttons'
 import '@/assets/css/masthead.scss'
+import { ButtonPrimary } from './Buttons'
 import AllBrowser from '@/assets/images/browser-all.png'
 import Chrome from '@/assets/images/oo/chrome.png'
 import Edge from '@/assets/images/oo/microsoft.png'
@@ -9,7 +11,29 @@ import Safari from '@/assets/images/oo/safari.png'
 import Sideup from '@/assets/images/oo/Top - Gif/ex-gif-done.gif'
 import Sidedown from '@/assets/images/sidedown.png'
 
-const Masthead = ({ ext }: any) => {
+const Masthead = () => {
+    const [browser, setBrowser] = useState<string>(""); // Initialize browser state as a string
+    useEffect(() => {
+        // Check for Safari
+        const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+        if (isSafari) {
+            setBrowser("Safari");
+        } else if (navigator.userAgent.indexOf("Edg") > -1) {
+            setBrowser("Microsoft Edge");
+        } else if ((window as any).chrome) {
+            setBrowser("Google Chrome");
+        } else if ('InstallTrigger' in window) {
+            setBrowser("Mozilla Firefox");
+        } else if ('ActiveXObject' in window) {
+            console.log("Internet Explorer or Microsoft Edge (legacy)");
+        } else if ('StyleMedia' in window) {
+            console.log("Microsoft Edge");
+        } else {
+            console.log("Unknown browser");
+        }
+    }, []);
+
     return (
         <section id='masthead' className='masthead'>
             <div className='masthead-content'>
@@ -27,23 +51,23 @@ const Masthead = ({ ext }: any) => {
                         </span>
                     </div>
                     <div className="add_tochrome mt-10 flex items-center">
-                        <ButtonPrimary link={`#`} text={`Add to ${ext} - It's Free`} cl={` block lg:mr-[15px] lg:w-[350px]`} />
+                        <ButtonPrimary text={false} link={`#`} cl={` block lg:mr-[15px] lg:w-[350px]`} />
                         {
-                            ext === 'Google Chrome' && (
+                            browser === 'Google Chrome' && (
                                 <Image src={Chrome} alt='chrome' height={36} width={36} className='inline-block' />
                             )}
                         {
-                            ext === 'Microsoft Edge' && (
+                            browser === 'Microsoft Edge' && (
                                 <Image src={Edge} alt='chrome' height={36} width={36} className='inline-block' />
                             )
                         }
                         {
-                            ext === 'Mozilla Firefox' && (
+                            browser === 'Mozilla Firefox' && (
                                 <Image src={FireFox} alt='Mozilla Firefox' height={36} width={36} className='inline-block' />
                             )
                         }
                         {
-                            ext === 'Safari' && (
+                            browser === 'Safari' && (
                                 <Image src={Safari} alt='Safari' height={36} width={36} className='inline-block' />
                             )
                         }
