@@ -18,8 +18,11 @@
 			padding-top: 43px;
 			padding-left: 40px;
 			img {
-				width: 127px;
-				height: 35px;
+				// width: 127px;
+				// height: 35px;
+				object-fit: contain;
+				height: 90px;
+				width: 135px;
 			}
 		}
 		.footer-value-left-Save {
@@ -27,7 +30,7 @@
 			font-size: 18px;
 			color: #ffffff;
 			padding-left: 40px;
-			margin-top: 16px;
+			// margin-top: 16px;
 			a {
 				color: #fff;
 				text-decoration: none;

@@ -20,7 +20,7 @@ const MerchantList = ({ext}:any) => {
     return (
         <>
             <section className='merchant_list'>
-                <h2>30,000+ Brands</h2>
+                <h2>200,000+ Stores</h2>
                 <h3>The oOhcoupons extension automatically searches for coupons on 30,000+ sites around the globe.</h3>
                 <div className='merchant_item grid grid-cols-2  md:grid-cols-3 lg:grid-cols-6 grid-rows-2 gap-6'>
                     {[...Array(12)].map((_, i) => (
