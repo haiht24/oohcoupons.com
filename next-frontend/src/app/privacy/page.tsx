@@ -2,6 +2,16 @@ import React from 'react'
 import '@/assets/css/privacy.scss'
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import { Metadata } from 'next'
+
+/* Metadata */
+export const metadata: Metadata = {
+  alternates: {
+    canonical: '/privacy',
+  },
+  title: `Privacy`,
+  description: '',
+}
 
 const PrivacyPolicy = () => {
   return (

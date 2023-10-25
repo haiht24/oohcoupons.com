@@ -2,6 +2,17 @@
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import '@/assets/css/privacy.scss'
+import { Metadata } from 'next'
+
+/* Metadata */
+export const metadata: Metadata = {
+  alternates: {
+    canonical: '/term',
+  },
+  title: `Terms`,
+  description: '',
+}
+
 const Term = () => {
   return (
     <>

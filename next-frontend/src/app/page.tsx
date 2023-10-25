@@ -1,4 +1,3 @@
-"use client"
 import Nav from '@/components/Nav';
 import Masthead from '@/components/Masthead';
 import Slider from '@/components/Slider';
@@ -8,19 +7,29 @@ import Section2 from '@/components/Section2';
 import Section3 from '@/components/Section3';
 import CommonList from '@/components/CommonList';
 import Footer from '@/components/Footer';
+import { Metadata } from 'next'
+
+/* Metadata */
+export const metadata: Metadata = {
+  alternates: {
+    canonical: '/',
+  },
+  title: `Home Title`,
+  description: 'Meta Description',
+}
 
 export default function Home() {
-  const name = 'Moolah';
+  const nameExt = 'oOH';
   return (
     <main>
-      <Nav nameExt={name} />
+      <Nav nameExt={nameExt} />
       <Masthead />
       <Slider />
-      <MerchantList />
+      <MerchantList nameExt={nameExt} />
       <Section1 />
       <Section2 />
       <Section3 />
-      <CommonList />
+      <CommonList nameExt={nameExt} />
       <Footer />
     </main>
   );

@@ -1,9 +1,18 @@
-import React from 'react'
+import { Metadata } from 'next'
 
-const WellcomeExt = () => {
+/* Metadata */
+export const metadata: Metadata = {
+  alternates: {
+    canonical: '/welcome-extension',
+  },
+  title: `Welcome`,
+  description: '',
+}
+
+const WelcomeExt = () => {
   return (
-    <div>WellcomeExt</div>
+    <div>WelcomeExt</div>
   )
 }
 
-export default WellcomeExt
+export default WelcomeExt

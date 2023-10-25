@@ -1,16 +1,16 @@
 import Image from 'next/image'
 import star from '@/assets/images/star.png'
 import '@/assets/css/commonlist.scss'
-const CommonList = () => {
+const CommonList = ({nameExt}:any) => {
     return (
         <div className="common_list">
-            <h1>Over 10,000 Reviews</h1>
+            <h1>Here's What Users Are Saying About oOh</h1>
             <ul className="stareview_item">
                 <li>
                     <h2>{`Talon O'Brian`}</h2>
                     <Image src={star} alt={`star`} />
                     <p>
-                        {`"Moolah is incredible, it is extremely helpful at finding the best
+                        {`"${nameExt} is incredible, it is extremely helpful at finding the best
                         coupon codes. I would recommend a lot!!"`}
                     </p>
                 </li>
@@ -26,8 +26,8 @@ const CommonList = () => {
                     <h2>Anthony Smith</h2>
                     <Image src={star} alt={`star`} />
                     <p>
-                        {`"The greatest coupon extension of all time. I don’t purchase anything
-                        without letting Moolah do its magic first..."`}
+                        {`"The greatest coupon extension of all time. I don't purchase anything
+                        without letting ${nameExt} do its magic first..."`}
                     </p>
                 </li>
             </ul>

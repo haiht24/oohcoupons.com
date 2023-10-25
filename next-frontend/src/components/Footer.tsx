@@ -25,7 +25,7 @@ const Footer = ({ext}:any) => {
                         <a href="/terms-conditions">Privacy Policy</a>
                     </div>
                     <div className="footer-banquan">
-                        <i>JoinMoolah © 2022</i>
+                        <i>oOHcoupons © 2023</i>
                     </div>
                 </div>
                 <div className="split-left-right" />
@@ -49,19 +49,19 @@ const Footer = ({ext}:any) => {
                         </span>
                     </div>
                     <div className="footer-value-left-fuwu">
-                        <a href="/about-us" target="_blank">
+                        <a href="/about-us" >
                             About Us
                         </a>
                         <span>|</span>
-                        <a href="mailto:contact@oohcoupons.com" target="_blank">
+                        <a href="mailto:contact@oohcoupons.com" >
                             Contact Us
                         </a>
                         <span>|</span>
-                        <a href="/privacy" target="_blank">
+                        <a href="/privacy" >
                             Privacy Policy
                         </a>
                         <span>|</span>
-                        <a href="/term" target="_blank">
+                        <a href="/term" >
                             Terms &amp; Conditions
                         </a>
                     </div>
