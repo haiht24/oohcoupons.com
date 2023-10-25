@@ -3,7 +3,7 @@
 	width: 100%;
 	left: 0;
 	background: #222222;
-	max-height: 300px;
+	// max-height: 300px;
 	.footer-value-box {
 		width: 1200px;
 		margin: 0 auto;
@@ -59,7 +59,7 @@
 .footer-box {
 	.footer-value-left-fuwu {
 		display: flex;
-		width: calc(67%);
+		// width: calc(67%);
 		line-height: 40px;
 	}
 	display: flex;
@@ -72,6 +72,8 @@
 		word-break: break-all;
 		hyphens: auto;
 		line-height: 40px;
+		text-align: center;
+		word-break: break-word;
 	}
 }
 .footer-value-left-fuwu {
@@ -125,6 +127,7 @@
 	img {
 		width: 429px;
 		height: 120px;
+		max-width: unset;
 	}
 }
 .footer-value-right-button {

@@ -1,5 +1,4 @@
 "use client"
-import React, { useEffect, useState } from 'react';
 import Nav from '@/components/Nav';
 import Masthead from '@/components/Masthead';
 import Slider from '@/components/Slider';
@@ -12,44 +11,17 @@ import Footer from '@/components/Footer';
 
 export default function Home() {
   const name = 'Moolah';
-  const [browser, setBrowser] = useState<string>(""); // Initialize browser state as a string
-
-  useEffect(() => {
-    // Check for Safari
-    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
-    if (isSafari) {
-      setBrowser("Safari");
-      // console.log('Safari');
-    } else if (navigator.userAgent.indexOf("Edg") > -1) {
-      setBrowser("Microsoft Edge");
-      // console.log('Microsoft Edge');
-    } else if ((window as any).chrome) {
-      setBrowser("Google Chrome");
-      // console.log('Google Chrome');
-    } else if ('InstallTrigger' in window) { // Check for InstallTrigger
-      setBrowser("Mozilla Firefox");
-      // console.log('Mozilla Firefox');
-    } else if ('ActiveXObject' in window) {
-      console.log("Internet Explorer or Microsoft Edge (legacy)");
-    } else if ('StyleMedia' in window) {
-      console.log("Microsoft Edge");
-    } else {
-      console.log("Unknown browser");
-    }
-  }, []);
-
   return (
     <main>
-      <Nav nameExt={name} ext={browser} />
-      <Masthead ext={browser} />
+      <Nav nameExt={name} />
+      <Masthead />
       <Slider />
-      <MerchantList ext={browser} />
+      <MerchantList />
       <Section1 />
       <Section2 />
-      <Section3 ext={browser} />
+      <Section3 />
       <CommonList />
-      <Footer ext={browser} />
+      <Footer />
     </main>
   );
 }
