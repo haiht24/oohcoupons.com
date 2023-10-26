@@ -39,7 +39,7 @@ const About = () => {
                         <strong>Apply the Best Code to Your Cart:</strong> OOHcoupons intelligently selects the coupon with the highest discount value if multiple codes are available.
                     </p>
                     <p>
-                    Download OOHcoupons for free at the <a href="https://www.mozilla.org/en-US/firefox/browsers/">Firefox</a>, <a href="https://www.google.com/chrome/?brand=JJTC&gclid=CjwKCAjw-eKpBhAbEiwAqFL0mhwoEqnD6DXFLNmtIUvN_bdsK6vejKrV3d_k0DZC5AP_xiz-bXAlfBoCy34QAvD_BwE&gclsrc=aw.ds">Chrome</a>, and <a href="https://www.microsoft.com/en-us/edge/download?form=MA13FJ">Microsoft Edge</a> web stores.
+                    Download OOHcoupons for free at the <a href={process.env.FIREFOX_EXT}>Firefox</a>, <a href={process.env.CHROME_EXT}>Chrome</a>, and <a href={process.env.EDGE_EXT}>Microsoft Edge</a> web stores.
                     </p>
                     <p>
                    <strong>Disclosure:</strong> We may earn a commission when you use one of our coupons/links to make a purchase. Your support allows us to continue providing you with exceptional savings opportunities.
