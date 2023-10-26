@@ -2,5 +2,24 @@
     background: #00000000 center/cover url("../images/oo/background-wellcome.webp") no-repeat;
     height: 100vh;
     width: 100vw;
+
     // margin-top: 5rem;
+    .float-box {
+        background-color: rgba(0, 0, 0, 0.345);
+        transition: opacity 0.5s, transform 0.5s;
+        opacity: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &.visible {
+            opacity: 1;
+          }
+        a {
+            color: #ff6931;
+            font-weight: 700;
+            margin-right: 2rem;
+        }
+    }
 }
+
