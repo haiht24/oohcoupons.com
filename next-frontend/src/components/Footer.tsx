@@ -21,8 +21,8 @@ const Footer = ({ext}:any) => {
                         </a>
                     </div>
                     <div className="footer-about">
-                        <a href="/terms-conditions">Terms &amp; Conditions</a>
-                        <a href="/terms-conditions">Privacy Policy</a>
+                        <a href="/term">Terms &amp; Conditions</a>
+                        <a href="/term">Privacy Policy</a>
                     </div>
                     <div className="footer-banquan">
                         <i>oOHcoupons © 2023</i>

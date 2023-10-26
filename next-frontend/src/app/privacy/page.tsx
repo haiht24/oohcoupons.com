@@ -25,7 +25,7 @@ const PrivacyPolicy = () => {
         <section>
           <h2>INTRODUCTION</h2>
           <p>At oOhCoupons.com, we care about our users and their privacy. We work hard to make sure you have the best experience possible on oOhCoupons.com and that means knowing what to expect when you use our website(s), products, services and applications (collectively “the Services”). This Privacy Policy (the “Policy’) identifies and describes how oOhCoupons Co. Ltd. (“oOhCoupons.com,” “we,” “us” and “our”) collects, uses, processes, discloses, and protects the information, including personal data, we obtain from and about our users. This Policy also explains your rights and choices with respect to your information and how oOhCoupons.com can be contacted if you have any questions or concerns. By using our Services, you are subject to this Policy and to our Terms of Service that can be viewed at
-            <a href="https://oohcoupons.com/terms"> https://oOhCoupons.com/terms</a>
+            <a href="/term"> https://oOhCoupons.com/term</a>
             . We reserve the right to update, change or replace any part of this Policy by posting updates and/or changes to our website. It is your responsibility to check this page periodically for changes. If you use the Services in any way after a change to the Policy is effective, that means you agree to all of the changes.</p>
         </section>
 
