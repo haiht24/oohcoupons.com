@@ -8,12 +8,13 @@ $nav-btn-bg: linear-gradient(168deg, #eb863d 0%, #fa7645 100%);
     z-index: 101;
 
     .nav-content {
-        max-width: 1200px;
+        width: 100%;
         height: 80px;
+        padding: 0 20px;
         box-shadow: 0 1px 0 0 #dedede;
 
-        @media screen and (max-width: 990px) {
-            padding: 0 20px;
+        @media screen and (min-width: 1240px) {
+            max-width: 1240px;
         }
 
         .dex {

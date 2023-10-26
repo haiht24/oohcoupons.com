@@ -8,7 +8,7 @@ const Nav = ({nameExt, ext}:any) => {
     
     return (
         <nav className="nav bg-white border-gray-200 fixed top-0 inset-x-0 shadow-bs-nav">
-            <div className="nav-content flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+            <div className="nav-content flex flex-wrap justify-between items-center mx-auto">
                 <a href="/" className="flex items-center">
                     <Image alt={`${nameExt} Logo`} src={Logo} width={127} height={35} loading="eager" className='hidden lg:block h-[66px] w-[66px]'/>     
                     <Image alt={`${nameExt} Logo`} src={Logomb} width={35} height={35} loading="eager" className='lg:hidden'/>     
