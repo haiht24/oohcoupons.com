@@ -11,14 +11,14 @@ const Section1 = () => {
         <div className="section_area_content fist_content lg:pb-[133px]">
           <div className="section_left">
             <span className="order_number number_first">01</span>
-            <span>
+            <span style={{ lineHeight: '45px' }}>
               Install the oOhcoupons extension for <i>FREE</i>
             </span>
             <p className="brief_introduce">
-            Add the oOhcoupons to your browser with only
-            ONE CLICK.
+              Add the oOhcoupons to your browser with only
+              ONE CLICK.
             </p>
-            <ButtonPrimary link={`#`} text={`Add oOhcoupons`} cl={`mt-10 w-max px-8`}/>
+            <ButtonPrimary link={`#`} text={`Add oOhcoupons`} cl={`mt-10 w-max px-8`} />
           </div>
           <div className="section_right">
             <Image src={srcSec1} alt={`sec1`} />

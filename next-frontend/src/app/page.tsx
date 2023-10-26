@@ -14,8 +14,8 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
-  title: `Home Title`,
-  description: 'Meta Description',
+  title: `Automatically finds & applies coupon codes - oOhCoupons`,
+  description: 'The oOhcoupons browser extension automatically finds for and applies discount codes at checkout with just a single click.',
 }
 
 export default function Home() {
