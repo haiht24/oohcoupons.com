@@ -11,23 +11,23 @@ const WelcomeExt = () => {
   const [isVisible, setIsVisible] = useState(false);
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsVisible(true)
-    }, 1000);
+      setIsVisible(true);
+    }, 2000);
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <>
       <Nav />
-      <div className='page-wellcome-ext'>
-        <div className="float-box">
-        <Image src={popup} style={{ display: isVisible ? 'block' : 'none' }} alt='demo' />
+      <div className="page-wellcome-ext">
+        <div className={`float-box ${isVisible ? 'visible' : ''}`}>
+          <a href="/">Back to Home</a>
+          <Image src={popup} alt="demo" />
         </div>
       </div>
       <Footer />
     </>
-
-  )
+  );
 }
 
 export default WelcomeExt
