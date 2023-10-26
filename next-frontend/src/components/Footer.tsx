@@ -12,7 +12,7 @@ const Footer = ({ext}:any) => {
                 <div className="footer-value-left">
                     <div className="footer-value-left-moolah">
                         <a href="#" style={{ display: "inline-block" }}>
-                            <Image src={Logo} alt={`Logo`}/>
+                            <Image src={Logo} alt={`Logo`} priority={true}/>
                         </a>
                     </div>
                     <div className="footer-value-left-Save">
