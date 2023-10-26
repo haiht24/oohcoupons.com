@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image'
 import '@/assets/css/masthead.scss'
 import { ButtonPrimary } from './Buttons'
-import AllBrowser from '@/assets/images/browser-all.png'
+// import AllBrowser from '@/assets/images/browser-all.png'
 import Chrome from '@/assets/images/oo/chrome.png'
 import Edge from '@/assets/images/oo/microsoft.png'
 import FireFox from '@/assets/images/oo/firefox.png'

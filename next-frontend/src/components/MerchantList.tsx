@@ -70,7 +70,7 @@ const images = [
 export const MerchantItem = ({ src, alt }: any) => {
     return (
         <div className='inline-block'>
-            <a href="" target="_blank">
+            <a>
                 <Image src={src} alt={alt} loading='lazy' width={90} height={90} />
             </a>
         </div>
