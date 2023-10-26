@@ -1,4 +1,6 @@
 .page-wellcome-ext {
-    background-image: url('../images/oo/background-wellcome.webp');
-    margin-top: 5rem;
+    background: #00000000 center/cover url("../images/oo/background-wellcome.webp") no-repeat;
+    height: 100vh;
+    width: 100vw;
+    // margin-top: 5rem;
 }

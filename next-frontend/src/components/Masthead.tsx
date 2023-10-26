@@ -77,8 +77,8 @@ const Masthead = () => {
                     </div>
                 </div>
                 <div className='masthead-content-right'>
-                    <Image src={Sidedown} className="sidedown" alt='sidedown' loading='lazy' />
-                    <Image src={Sideup} className="sideup" alt='sideup' loading='lazy' />
+                    <Image src={Sidedown} className="sidedown" alt='sidedown' priority={true}/>
+                    <Image src={Sideup} className="sideup" alt='sideup' loading='lazy'/>
                 </div>
             </div>
         </section>

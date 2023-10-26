@@ -71,7 +71,7 @@ export const MerchantItem = ({ src, alt }: any) => {
     return (
         <div className='inline-block'>
             <a>
-                <Image src={src} alt={alt} loading='lazy' width={90} height={90} />
+                <Image src={src} alt={alt} loading='lazy' width={90} height={90} className='w-full h-auto'/>
             </a>
         </div>
     );
