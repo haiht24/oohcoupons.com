@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40.558" height="43.391" viewBox="0 0 40.558 43.391">
+  <g id="Group_1200" data-name="Group 1200" transform="translate(-360.756 -514.556)">
+    <g id="grade-24px" transform="translate(364.482 532.828) rotate(-25)">
+      <path id="Path_1144" data-name="Path 1144" d="M0,0H27.715V27.715H0Z" fill="none"/>
+      <path id="Path_1145" data-name="Path 1145" d="M13.548,19.634l7.137,4.307-1.894-8.118L25.1,10.361l-8.3-.7L13.548,2,10.3,9.656l-8.3.7,6.305,5.462L6.411,23.941Z" transform="translate(0.31 0.31)" fill="#fff"/>
+    </g>
+    <g id="grade-24px-2" data-name="grade-24px" transform="translate(386.183 514.933) rotate(-2)">
+      <path id="Path_1144-2" data-name="Path 1144" d="M0,0H10.792V10.792H0Z" fill="none"/>
+      <path id="Path_1145-2" data-name="Path 1145" d="M6.5,8.866l2.779,1.677L8.538,7.383l2.455-2.127L7.76,4.981,6.5,2,5.233,4.981,2,5.256,4.455,7.383l-.737,3.161Z" transform="translate(-1.101 -1.101)" fill="#fff"/>
+    </g>
+    <g id="grade-24px-3" data-name="grade-24px" transform="matrix(0.819, 0.574, -0.574, 0.819, 365.585, 521.503)">
+      <path id="Path_1144-3" data-name="Path 1144" d="M0,0H8.419V8.419H0Z" fill="none"/>
+      <path id="Path_1145-3" data-name="Path 1145" d="M5.508,7.356,7.676,8.665,7.1,6.2,9.016,4.54,6.494,4.326,5.508,2,4.522,4.326,2,4.54,3.915,6.2,3.34,8.665Z" transform="translate(-1.298 -1.298)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
