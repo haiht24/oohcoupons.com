@@ -1,25 +1,81 @@
 .page-wellcome-ext {
     background: #00000000 center/cover url("../images/oo/background-wellcome.webp") no-repeat;
-    height: 100vh;
+    height: 85vh;
     width: 100vw;
+    margin-top: 80px;
 
     // margin-top: 5rem;
     .float-box {
-        background-color: rgba(0, 0, 0, 0.345);
+        background-color: rgba(0, 0, 0, 0.7);
         transition: opacity 0.5s, transform 0.5s;
         opacity: 0;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        height: 85vh;
+
         &.visible {
             opacity: 1;
-          }
+        }
+
         a {
             color: #ff6931;
             font-weight: 700;
-            margin-right: 2rem;
+        }
+
+        img.popup {
+            position: relative;
+
+            @media screen and (max-width:767px) {
+                max-width: 60%;
+            }
+        }
+
+        img.rope {
+            z-index: 8;
+            position: relative;
+            right: -10px;
+            top: 44px;
+
+            @media screen and (max-width:991px) {
+                display: none;
+            }
+        }
+
+        img.popup {
+            position: relative;
+        }
+
+        img.white-star {
+            margin-right: 15px;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 87px;
+            font-weight: 500;
+
+            @media screen and (max-width:767px) {
+                font-size: 35px;
+                margin: 30px 0 0;
+            }
+        }
+    }
+
+    .try-demo-box {
+        a {
+            background-color: #ff6931;
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            border-radius: 5px;
+            padding: 10px 35px 8px 20px;
+            margin: 35px 0 0;
+            width: 240px;
+
+            @media screen and (max-width:767px) {
+                margin: 15px 0 0;
+                font-size: 16px;
+                padding: 8px 20px 6px 20px;
+                width: unset;
+            }
         }
     }
 }
-
