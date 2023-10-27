@@ -13,6 +13,9 @@ import Sidedown from '@/assets/images/sidedown.png'
 
 const Masthead = () => {
     const [browser, setBrowser] = useState<string>(""); // Initialize browser state as a string
+
+    const [installLink, setInstallLink] = useState<string>(process.env.CHROME_EXT || '') // default Chrome
+
     useEffect(() => {
         // Check for Safari
         const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
@@ -21,14 +24,18 @@ const Masthead = () => {
             setBrowser("Safari");
         } else if (navigator.userAgent.indexOf("Edg") > -1) {
             setBrowser("Microsoft Edge");
+            setInstallLink(process.env.EDGE_EXT || '')
         } else if ((window as any).chrome) {
             setBrowser("Google Chrome");
         } else if ('InstallTrigger' in window) {
             setBrowser("Mozilla Firefox");
+            setInstallLink(process.env.FIREFOX_EXT || '')
         } else if ('ActiveXObject' in window) {
             console.log("Internet Explorer or Microsoft Edge (legacy)");
+            setInstallLink(process.env.EDGE_EXT || '')
         } else if ('StyleMedia' in window) {
             console.log("Microsoft Edge");
+            setInstallLink(process.env.EDGE_EXT || '')
         } else {
             console.log("Unknown browser");
         }
@@ -51,7 +58,7 @@ const Masthead = () => {
                         </span>
                     </div>
                     <div className="add_tochrome mt-10 flex items-center">
-                        <ButtonPrimary text={false} link={`#`} cl={` block lg:mr-[15px] lg:w-[350px]`} />
+                        <ButtonPrimary text={false} link={installLink} cl={` block lg:mr-[15px] lg:w-[350px]`} />
                         {
                             browser === 'Google Chrome' && (
                                 <Image src={Chrome} alt='chrome' height={36} width={36} className='inline-block' />

@@ -1,7 +1,11 @@
 "use client"
+
 import React, { useEffect, useState } from 'react';
-export const ButtonPrimary = ({ link,text, cl }: any) => {
+
+export const ButtonPrimary = ({ text, cl }: any) => {
   const [browser, setBrowser] = useState<string>(""); // Initialize browser state as a string
+
+  const [installLink, setInstallLink] = useState<string>(process.env.CHROME_EXT || '') // default Chrome
 
   useEffect(() => {
     // Check for Safari
@@ -11,21 +15,25 @@ export const ButtonPrimary = ({ link,text, cl }: any) => {
       setBrowser("Safari");
     } else if (navigator.userAgent.indexOf("Edg") > -1) {
       setBrowser("Microsoft Edge");
+      setInstallLink(process.env.EDGE_EXT || '')
     } else if ((window as any).chrome) {
       setBrowser("Google Chrome");
     } else if ('InstallTrigger' in window) {
       setBrowser("Mozilla Firefox");
+      setInstallLink(process.env.FIREFOX_EXT || '')
     } else if ('ActiveXObject' in window) {
       console.log("Internet Explorer or Microsoft Edge (legacy)");
+      setInstallLink(process.env.EDGE_EXT || '')
     } else if ('StyleMedia' in window) {
       console.log("Microsoft Edge");
+      setInstallLink(process.env.EDGE_EXT || '')
     } else {
       console.log("Unknown browser");
     }
   }, []);
 
   return (
-    text === false ? <Button link={link} browser={browser} cl={cl} /> :<Button2 link="#" text={text} cl={cl} />
+    text === false ? <Button link={installLink} browser={browser} cl={cl} /> : <Button2 link={installLink} text={text} cl={cl} />
   );
 }
 

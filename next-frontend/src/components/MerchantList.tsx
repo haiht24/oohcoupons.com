@@ -92,7 +92,7 @@ const MerchantList = ({ nameExt }: any) => {
             <section className='features_list'>
                 <h1>Why spend more?</h1>
                 <h2>Try oOhcoupons for automatic coupon codes at checkout.</h2>
-                <ButtonPrimary link={`#`} text={false} cl={`mt-[30px] mb-[60px] block w-full lg:w-[300px] lg:mb-[100px] mx-auto`} />
+                <ButtonPrimary text={false} cl={`mt-[30px] mb-[60px] block w-full lg:w-[300px] lg:mb-[100px] mx-auto`} />
             </section>
         </>
     );

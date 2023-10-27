@@ -18,7 +18,7 @@ const Section1 = () => {
               Add the oOhcoupons to your browser with only
               ONE CLICK.
             </p>
-            <ButtonPrimary link={`#`} text={`Add oOhcoupons`} cl={`mt-10 w-max px-8`} />
+            <ButtonPrimary text={`Add oOhcoupons`} cl={`mt-10 w-max px-8`} />
           </div>
           <div className="section_right">
             <Image src={srcSec1} alt={`sec1`} />

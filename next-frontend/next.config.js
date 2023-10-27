@@ -2,9 +2,9 @@
 const nextConfig = {
     env: {
         // Link to page install extension by browsers
-        FIREFOX_EXT: 'https://linkfirefox.com',
-        CHROME_EXT: 'https://linkchrome.com',
-        EDGE_EXT: 'https://linkedge.com',
+        FIREFOX_EXT: '#',
+        CHROME_EXT: '#',
+        EDGE_EXT: '#',
     }
 }
 

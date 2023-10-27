@@ -15,7 +15,7 @@ const Nav = ({ext}:any) => {
                     <span className="self-center text-xl font-semibold whitespace-nowrap hidden">oohcoupons.com</span>
                 </a>
                 <div className="flex items-center lg:order-2">
-                    <ButtonPrimary text={false} link={'#'}  cl={`dex text-white px-4 lg:px-5 py-2 lg:py-2.5 focus:outline-none flex items-center rounded-3xl`}/>
+                    <ButtonPrimary text={false} cl={`dex text-white px-4 lg:px-5 py-2 lg:py-2.5 focus:outline-none flex items-center rounded-3xl`}/>
                 </div>
             </div>
         </nav>

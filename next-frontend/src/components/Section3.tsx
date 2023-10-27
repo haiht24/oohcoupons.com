@@ -14,11 +14,7 @@ const Section3 = ({ext}:any) => {
             <p className="brief_introduce">
             Shop confidently knowing that oOhcoupons has got your back.{" "}
             </p>
-            <ButtonPrimary
-              link={`#`}
-              text={false}
-              cl={`mt-10 px-8 overflow-hidden lg:w-fit`}
-            />
+            <ButtonPrimary text={false} cl={`mt-10 px-8 overflow-hidden lg:w-fit`} />
           </div>
           <div className="section_right">
             <Image

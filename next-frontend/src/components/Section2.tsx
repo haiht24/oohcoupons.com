@@ -27,7 +27,7 @@ const Section2 = () => {
             <p className="brief_introduce">
             The oOhcoupons extension automatically searches for and applies the coupon code to your shopping cart.{" "}
             </p>
-            <ButtonPrimary link={`#`} text={`Install Now`} cl={`mt-10 w-max px-8`}/>
+            <ButtonPrimary text={`Install Now`} cl={`mt-10 w-max px-8`}/>
           </div>
         </div>
       </div>
