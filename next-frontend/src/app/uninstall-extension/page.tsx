@@ -13,7 +13,7 @@ const UninstallExt = () => {
     const handleOtherCheckbox = () => {
         setCheck(!check);
     };
-    
+
     return (
         <>
             <Nav />
@@ -25,7 +25,9 @@ const UninstallExt = () => {
                     <div className='grid grid-cols-2 gap-4'>
                         <div className='mt-[30px]'>
                             <Image alt={`uninstall`} src={imageUninstall} width={163} height={163} loading="eager" priority className='mx-auto mb-5' />
-                            <p>Did you know Tenere does much more than Plant Tree? It also provides you thousands of coupon codes from our partners, so you can save! You can also store your favorite shops, so we can help make sure you never miss out on some savings.</p>
+                            <p> 
+ 	
+oOhcoupons is a totally free browser extension which automatically finds, tests, and applies the best available coupon codes at checkout.</p>
                             <button type="button" className="btn btn-submit mt-5">Reinstall Extension - it's free</button>
                         </div>
 
