@@ -1,6 +1,6 @@
 .page-wellcome-ext {
     background: #00000000 center/cover url("../images/oo/background-wellcome.webp") no-repeat;
-    height: 85vh;
+    height: 100vh;
     width: 100vw;
     margin-top: 80px;
 
@@ -9,7 +9,7 @@
         background-color: rgba(0, 0, 0, 0.7);
         transition: opacity 0.5s, transform 0.5s;
         opacity: 0;
-        height: 85vh;
+        height: 100vh;
 
         &.visible {
             opacity: 1;
@@ -22,6 +22,8 @@
 
         img.popup {
             position: relative;
+            width: 401px;
+            height: 401px;
 
             @media screen and (max-width:767px) {
                 max-width: 60%;
@@ -69,6 +71,7 @@
             padding: 10px 35px 8px 20px;
             margin: 35px 0 0;
             width: 240px;
+            font-family: "Montserrat",sans-serif;
 
             @media screen and (max-width:767px) {
                 margin: 15px 0 0;

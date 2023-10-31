@@ -1,19 +1,48 @@
 "use client"
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import Image from 'next/image'
 import Logo from '@/assets/images/oo/logo-new.png'
-import imageUninstall from '@/assets/images/image-uninstall.png'
+import imageUninstall_1 from '@/assets/images/image-uninstall.png'
 import '@/assets/css/uninstall-extension.scss'
 
 const UninstallExt = () => {
-    const [check, setCheck] = useState(false)
-
     const handleOtherCheckbox = () => {
-        setCheck(!check);
+        if (typeof document !== 'undefined') {
+            const checkboxes = document.querySelectorAll('.form-group');
+            const button = document.getElementById('submit_btn');
+
+            checkboxes.forEach((checkbox) => {
+                const input = checkbox.querySelector('input[type="checkbox"]');
+                if (input && input instanceof HTMLInputElement) {
+                    input.addEventListener('change', () => {
+                        if (input.checked) {
+                            checkbox.classList.add('salmon');
+                        } else {
+                            checkbox.classList.remove('salmon');
+                        }
+    
+                        // Check if any .form-group has the 'salmon' class and add the 'active' class to the button if it exists
+                        const anySalmon = Array.from(checkboxes).some((chk) => chk.classList.contains('salmon'));
+                        if (button) {
+                            if (anySalmon) {
+                                button.classList.add('active');
+                            } else {
+                                button.classList.remove('active');
+                            }
+                        }
+                    });
+                }
+            });
+        }
     };
 
+    
+
+    useEffect(() => {
+        handleOtherCheckbox();
+    });
     return (
         <>
             <Nav />
@@ -22,13 +51,11 @@ const UninstallExt = () => {
                 <div className='help-us text-center'>
                     <h4 className="title">Help us improve</h4>
                     <div className="desc">Why did you uninstall Tenere? Check all that apply.</div>
-                    <div className='grid grid-cols-2 gap-4'>
-                        <div className='mt-[30px]'>
-                            <Image alt={`uninstall`} src={imageUninstall} width={163} height={163} loading="eager" priority className='mx-auto mb-5' />
-                            <p> 
- 	
-oOhcoupons is a totally free browser extension which automatically finds, tests, and applies the best available coupon codes at checkout.</p>
-                            <button type="button" className="btn btn-submit mt-5">Reinstall Extension - it's free</button>
+                    <div className='grid grid-cols-1 md:grid-cols-2 md:gap-4'>
+                        <div className='mt-[20px] md:mt-[30px]'>
+                            <Image alt={`uninstall`} src={imageUninstall_1} width={163} height={163} loading="eager" priority className=' unistall-img mx-auto mb-5' />
+                            <p className='text-center md:text-left'>oOhcoupons is a totally free browser extension which automatically finds, tests, and applies the best available coupon codes at checkout.</p>
+                            <button type="button" className="btn btn-submit mt-[15px] md:mt-5">Reinstall Extension - it's free</button>
                         </div>
 
                         <form action="" id="uninstall_form" method="POST" className="help-us-form">
@@ -137,7 +164,7 @@ oOhcoupons is a totally free browser extension which automatically finds, tests,
 
                                 />
                                 <label htmlFor="reason8">
-                                    <span className="checkmark" onClick={handleOtherCheckbox} />
+                                    <span className="checkmark" />
                                     Other, please explain:
                                 </label>
                             </div>
@@ -149,7 +176,7 @@ oOhcoupons is a totally free browser extension which automatically finds, tests,
                                 className="form-control"
                                 defaultValue={""}
                             />
-                            <button id="submit_btn" type="submit" className={`btn btn-submit ${check ? 'active' : ''}`}>
+                            <button id="submit_btn" type="submit" className={`btn btn-submit btn-primary`}>
                                 Submit
                             </button>
                         </form>
