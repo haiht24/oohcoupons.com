@@ -1,7 +1,18 @@
-.page-uninstall-extension {
+body {
     background-color: #fafafa;
+}
+
+.page-uninstall-extension {
+    width: 100%;
     margin-top: 80px;
-    padding: 35px 0;
+    padding: 35px 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width:1200px) {
+        padding: 35px 0px;
+    }
+
     .help-us {
         margin: 0 auto;
         max-width: 1200px;
@@ -12,10 +23,15 @@
         font-size: 16px;
         font-weight: 300;
 
+        @media screen and (max-width:767px) {
+            padding: 35px 15px;
+        }
+
         h4.title {
             font-size: 41px;
             text-align: center;
             font-weight: 300;
+            margin-bottom: 7px;
         }
 
         .desc {
@@ -23,9 +39,15 @@
             text-align: center;
         }
 
+        .unistall-img {
+            margin: 0px 0 10px;
+            max-width: 100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         p {
             font-size: 16px;
-            text-align: left;
             line-height: 24px;
         }
 
@@ -49,8 +71,8 @@
         }
 
         .btn-submit {
-            background-color: #578d3f;
-            border: 1px solid #578d3f;
+            background: linear-gradient(168deg, #eb863d 0%, #fa7645 100%);
+            // border: 1px solid #578d3f;
             font-size: 16px;
             font-weight: bold;
             color: #fff;
@@ -92,8 +114,8 @@
 
 
                     &:checked~label .checkmark {
-                        background-color: #578d3f;
-                        border: solid 1px #578d3f;
+                        background:  #eb863d;
+                        border: solid 1px #fa7645;
 
                         &:after {
                             display: block;
@@ -104,6 +126,8 @@
                 label {
                     margin: 0;
                     cursor: pointer;
+                    text-align: left;
+                    line-height: 22.5px;
                 }
 
                 .checkmark {
@@ -135,6 +159,7 @@
                 font-size: 16px;
                 color: #3c4043;
             }
+
             .btn-submit {
                 margin: 20px 0 0;
                 width: 100%;
@@ -142,11 +167,100 @@
                 background: #ababab;
                 border: 1px solid #ababab;
                 pointer-events: none;
-                &.active{
-                    background: #578d3f;
+                height: unset;
+                transition: background 0.3s ease-in-out, transform 0.3s ease-in-out; 
+
+                &.active {
+                    background: #eb863d ;
                     pointer-events: initial;
+                    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out; /* Add a transition effect */
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width:991px) {
+    .page-uninstall-extension {
+        padding: 35px 30px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .page-uninstall-extension {
+        padding: 35px 15px;
+
+        .help-us {
+            h4.title {
+                font-size: 25px;
+            }
+
+            .desc {
+                font-size: 15px;
+            }
+
+            .btn-submit,
+            .btn-grey {
+                font-size: 14px;
+                font-weight: 500;
+                padding: 6px 20px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+
+            form {
+                padding: 0;
+
+                .btn-submit {
+                    margin: 15px 0 0;
+                }
+            }
+
+            & form {
+                margin: 15px 0 0;
+
+                .form-group {
+                    margin-bottom: 10px;
+                    padding-left: 24px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:576px) {
+    .page-uninstall-extension {
+        max-width: 540px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .page-uninstall-extension {
+        max-width: 720px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .page-uninstall-extension {
+        max-width: 960px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .page-uninstall-extension {
+        max-width: 1140px;
+    }
+}
+@media screen and (min-width: 1300px) {
+    .page-uninstall-extension {
+        max-width: 1240px;
+    }
+}
+@media screen and (min-width: 1340px) {
+    .page-uninstall-extension {
+        max-width: 1280px;
     }
 }

@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import '@/assets/css/welcome.scss'
-import popup from '@/assets/images/wc4.png';
+import popup from '@/assets/images/welcome.png';
 import rope from '@/assets/images/rope.svg'
 import whiteStar from '@/assets/images/white-star.svg'
 
@@ -28,7 +28,7 @@ const WelcomeExt = () => {
             <h2 className="fb-title active text-white">Welcome</h2>
             <div className='try-demo-box'>
               <a href="#" className='text-white flex items-center justify-center'>
-                <Image src={whiteStar} alt='white-star' priority className='white-star' />
+                <Image src={whiteStar} alt='white-star' priority className='white-star'/>
                 Try Demo</a>
             </div>
             <a href="/" className='block my-4'>Back to Home</a>
