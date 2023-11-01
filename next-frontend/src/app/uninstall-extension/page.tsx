@@ -5,9 +5,13 @@ import Footer from '@/components/Footer';
 import Image from 'next/image'
 import Logo from '@/assets/images/oo/logo-new.png'
 import imageUninstall_1 from '@/assets/images/image-uninstall.png'
+import CheckmarkSVG from '@/assets/images/check_checkmark.svg';
 import '@/assets/css/uninstall-extension.scss'
 
+
+
 const UninstallExt = () => {
+
     const handleOtherCheckbox = () => {
         if (typeof document !== 'undefined') {
             const checkboxes = document.querySelectorAll('.form-group');
@@ -22,7 +26,7 @@ const UninstallExt = () => {
                         } else {
                             checkbox.classList.remove('salmon');
                         }
-    
+
                         // Check if any .form-group has the 'salmon' class and add the 'active' class to the button if it exists
                         const anySalmon = Array.from(checkboxes).some((chk) => chk.classList.contains('salmon'));
                         if (button) {
@@ -38,7 +42,26 @@ const UninstallExt = () => {
         }
     };
 
-    
+    const handleModal = () => {
+        let modal = document.getElementById('myModal');
+        let body = document.getElementsByTagName('body')[0];
+        let closebtn = document.getElementsByClassName("close")[0];
+
+        // Get the modal
+        modal?.classList.add('showModal')
+        // Remove the modal
+        closebtn.addEventListener('click', function () {
+            modal?.classList.remove('showModal')
+            console.log(closebtn)
+        })
+
+        body.addEventListener('click', function (e) {
+            if (e.target == modal) {
+                modal?.classList.remove('showModal')
+            }
+
+        })
+    }
 
     useEffect(() => {
         handleOtherCheckbox();
@@ -55,10 +78,10 @@ const UninstallExt = () => {
                         <div className='mt-[20px] md:mt-[30px]'>
                             <Image alt={`uninstall`} src={imageUninstall_1} width={163} height={163} loading="eager" priority className=' unistall-img mx-auto mb-5' />
                             <p className='text-center md:text-left'>oOhcoupons is a totally free browser extension which automatically finds, tests, and applies the best available coupon codes at checkout.</p>
-                            <button type="button" className="btn btn-submit mt-[15px] md:mt-5">Reinstall Extension - it's free</button>
+                            <button type="button" className="btn btn-submit mt-[15px] md:mt-5">Reinstall Extension - it's free </button>
                         </div>
 
-                        <form action="" id="uninstall_form" method="POST" className="help-us-form">
+                        <form action="" id="uninstall_form" method="POST" className="help-us-form" onSubmit={(e) => { e.preventDefault() }}> {/* Prevent Action Submit  */}
                             <input
                                 type="hidden"
                                 name="_token"
@@ -176,11 +199,20 @@ const UninstallExt = () => {
                                 className="form-control"
                                 defaultValue={""}
                             />
-                            <button id="submit_btn" type="submit" className={`btn btn-submit btn-primary`}>
+                            <button id="submit_btn" type="submit" className={`btn btn-submit btn-primary`} onClick={handleModal}>
                                 Submit
                             </button>
                         </form>
                     </div>
+                </div>
+            </div>
+            <div id='myModal' className='modal'>
+                <div className='modal-content flex items-center justify-center flex-col'>
+                    <span className='close self-end'></span>
+
+                    <Image src={CheckmarkSVG} alt='checkmark'/>
+                    <h2>Thanks!!</h2>
+                    <p>You feedback has been submit successfully</p>
                 </div>
             </div>
             <Footer />
