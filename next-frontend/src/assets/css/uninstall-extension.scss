@@ -227,7 +227,7 @@ body {
 }
 
 .modal {
-    display: none;
+    // display: none;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -235,8 +235,6 @@ body {
     width: 100%;
     height: 100%;
     overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
     -webkit-animation-name: fadeIn;
     -webkit-animation-duration: 0.4s;
@@ -246,23 +244,24 @@ body {
     .modal-content {
         padding: 15px;
         position: fixed;
-        top: 44vh;
+        top: 40vh;
         left: 50%;
         transform: translate(-50%);
-        width: 50%;
         height: max-content;
         background-color: #fefefe;
         -webkit-animation-name: slideIn;
         -webkit-animation-duration: 0.4s;
         animation-name: slideIn;
         animation-duration: 0.4s;
-        h2{
+
+        h2 {
             font-size: 25px;
             font-weight: bold;
             font-family: sans-serif;
         }
-        p{
-            font-family: "Montserrat",sans-serif;
+
+        p {
+            font-family: "Montserrat", sans-serif;
             font-weight: 300;
             padding-bottom: 25px;
         }
@@ -275,7 +274,8 @@ body {
         height: 25px;
         overflow: hidden;
         cursor: pointer;
-        &::before, 
+
+        &::before,
         &::after {
             content: "";
             position: absolute;
@@ -287,6 +287,7 @@ body {
             border-radius: 4px;
             margin-top: -4px;
         }
+
         &::before {
             -webkit-transform: rotate(45deg);
             -moz-transform: rotate(45deg);
@@ -294,6 +295,7 @@ body {
             -o-transform: rotate(45deg);
             transform: rotate(45deg);
         }
+
         &::after {
             -webkit-transform: rotate(-45deg);
             -moz-transform: rotate(-45deg);
@@ -302,14 +304,17 @@ body {
             transform: rotate(-45deg);
         }
     }
-    .my-svg{
+
+    .my-svg {
         fill: #eb863d;
-       svg{
-        fill: #eb863d;
-        path{
+
+        svg {
             fill: #eb863d;
+
+            path {
+                fill: #eb863d;
+            }
         }
-       }
     }
 }
 
@@ -366,7 +371,6 @@ body {
         }
     }
 }
-
 
 @media screen and (min-width:576px) {
     .page-uninstall-extension {
