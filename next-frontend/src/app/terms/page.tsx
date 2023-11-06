@@ -7,7 +7,7 @@ import { Metadata } from 'next'
 /* Metadata */
 export const metadata: Metadata = {
   alternates: {
-    canonical: '/term',
+    canonical: '/terms',
   },
   title: `Terms`,
   description: '',
@@ -26,7 +26,7 @@ const Term = () => {
           <h2>INTRODUCTION</h2>
           <p>Welcome to oOhCoupons.com. These Terms of Service (the “Terms”) set forth the terms and conditions that govern your use of our website(s), products, services and applications (collectively, the “Services”) provided by oOhCoupons Co. Ltd. (“oOhCoupons.com,” “we,” “us” and “our”).</p>
           <div>Accepting the Terms</div>
-          <p>To use the Services you must agree to and accept all of the Terms. Your use of the Services in any way means that you agree to be bound by these Terms, and these Terms will remain in effect while you use the Services. These Terms include the provisions in this document, as well as those in the Privacy Policy available at <a href="/term"> https://oOhCoupons.com/term</a>. By agreeing to these Terms, you represent that you are at least the age of majority in your state or province of residence, and you have given us your consent to allow any of your minor dependents to use this site.</p>
+          <p>To use the Services you must agree to and accept all of the Terms. Your use of the Services in any way means that you agree to be bound by these Terms, and these Terms will remain in effect while you use the Services. These Terms include the provisions in this document, as well as those in the Privacy Policy available at <a href="/terms"> https://oOhCoupons.com/terms</a>. By agreeing to these Terms, you represent that you are at least the age of majority in your state or province of residence, and you have given us your consent to allow any of your minor dependents to use this site.</p>
           <p>Any new features or tools which are added to the Services shall also be subject to these Terms. You can review the most current version of the Terms at any time on this page. We reserve the right to update, change or replace any part of these Terms by posting updates and/or changes to our website. It is your responsibility to check this page periodically for changes. If you use the Services in any way after a change to the Terms is effective, that means you agree to all of the changes.</p>
           <div>Description of Services</div>
           <p>oOhCoupons.com brings you savings with our comparison shopping tools, coupons, loyalty points, price alerts and other services. Unlike classic price comparison sites that focus on matching only new products, our technology also enables the matching of new products to, used, refurbished, generic, rental and offline. This enables the comparison options to span hundreds of thousands of merchants to provide full transparency and the most savings to you.</p>
