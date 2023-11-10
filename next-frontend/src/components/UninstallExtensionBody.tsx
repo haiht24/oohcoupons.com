@@ -6,13 +6,14 @@ import Modal from '@/components/Modal'
 import Image from 'next/image'
 import Logo from '@/assets/images/oo/logo-new.png'
 import imageUninstall_1 from '@/assets/images/image-uninstall.png'
+import ButtonReinstall from './ButtonReinstall'
 
 const LeftContent = () => {
     return (
         <div className='mt-[20px] md:mt-[30px]'>
             <Image alt={`uninstall`} src={imageUninstall_1} width={163} height={163} loading="eager" priority className=' unistall-img mx-auto mb-5' />
             <p className='text-center md:text-left'>oOhcoupons is a totally free browser extension which automatically finds, tests, and applies the best available coupon codes at checkout.</p>
-            <button type="button" className="btn btn-submit mt-[15px] md:mt-5">Reinstall Extension - it's free </button>
+            <ButtonReinstall />
         </div>
     )
 }
@@ -59,6 +60,7 @@ const UninstallExtensionBody = () => {
 
     const closeModal = () => {
         setIsModalOpen(false)
+        window.location.href = '/' // redirect to Home page
     }
 
     return (
