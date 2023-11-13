@@ -13,7 +13,7 @@ const WelcomeExtensionBody = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsVisible(true)
-        }, 2000)
+        }, 500)
         return () => clearTimeout(timer)
     }, [])
 
