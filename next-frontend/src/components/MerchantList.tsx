@@ -1,20 +1,20 @@
-import Image from 'next/image';
-import { ButtonPrimary } from './Buttons';
-import '@/assets/css/merchantlist.scss';
+import Image from 'next/image'
+import { ButtonPrimary } from './Buttons'
+import '@/assets/css/merchantlist.scss'
 
 // Import your images statically with specified width and height
-import image1 from '@/assets/images/oo/stores/macys.png';
-import image2 from '@/assets/images/oo/stores/walmartLogo.png';
-import image3 from '@/assets/images/oo/stores/nike-logo.jpeg';
-import image4 from '@/assets/images/oo/stores/amazon.png';
-import image5 from '@/assets/images/oo/stores/Kohls.png';
-import image6 from '@/assets/images/oo/stores/Booking.png';
-import image7 from '@/assets/images/oo/stores/AliExpress-Logo.png';
-import image8 from '@/assets/images/oo/stores/Forever_21_logo.svg.png';
-import image9 from '@/assets/images/oo/stores/Udemy_logo.svg.png';
-import image10 from '@/assets/images/oo/stores/ebay.png';
-import image11 from '@/assets/images/oo/stores/1485908_WAG_Signature_logo_RGB_750x208.png';
-import image12 from '@/assets/images/oo/stores/ULTA_Logo.jpeg';
+import image1 from '@/assets/images/oo/stores/macys.png'
+import image2 from '@/assets/images/oo/stores/walmartLogo.png'
+import image3 from '@/assets/images/oo/stores/nike-logo.jpeg'
+import image4 from '@/assets/images/oo/stores/amazon.png'
+import image5 from '@/assets/images/oo/stores/Kohls.png'
+import image6 from '@/assets/images/oo/stores/Booking.png'
+import image7 from '@/assets/images/oo/stores/AliExpress-Logo.png'
+import image8 from '@/assets/images/oo/stores/Forever_21_logo.svg.png'
+import image9 from '@/assets/images/oo/stores/Udemy_logo.svg.png'
+import image10 from '@/assets/images/oo/stores/ebay.png'
+import image11 from '@/assets/images/oo/stores/1485908_WAG_Signature_logo_RGB_750x208.png'
+import image12 from '@/assets/images/oo/stores/ULTA_Logo.jpeg'
 
 const images = [
     {
@@ -65,16 +65,26 @@ const images = [
         src: image12,
         alt: "Ulta",
     },
-];
+]
 
 export const MerchantItem = ({ src, alt }: any) => {
+    if (alt == 'Walmart') {
+        return (
+            <div className='inline-block'>
+                <a href='https://sovrn.co/1nsyka8' target='_blank'>
+                    <Image src={src} alt={alt} loading='lazy' width={90} height={90} className='w-full h-auto' />
+                </a>
+            </div>
+        )
+    }
+
     return (
         <div className='inline-block'>
             <a>
-                <Image src={src} alt={alt} loading='lazy' width={90} height={90} className='w-full h-auto'/>
+                <Image src={src} alt={alt} loading='lazy' width={90} height={90} className='w-full h-auto' />
             </a>
         </div>
-    );
+    )
 }
 
 const MerchantList = ({ nameExt }: any) => {
@@ -95,7 +105,7 @@ const MerchantList = ({ nameExt }: any) => {
                 <ButtonPrimary text={false} cl={`mt-[30px] mb-[60px] block w-full lg:w-[300px] lg:mb-[100px] mx-auto`} />
             </section>
         </>
-    );
+    )
 }
 
-export default MerchantList;
+export default MerchantList
